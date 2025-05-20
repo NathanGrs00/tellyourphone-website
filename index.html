@@ -6,6 +6,7 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 
+        <link type="text/css" rel="stylesheet" href="homepage.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="myJs.js"></script>
@@ -15,10 +16,20 @@
         <header>
             <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
+                <li><a href="#!">New Phones</a></li>
                 <li class="divider"></li>
-                <li><a href="#!">three</a></li>
+                <li><a href="#!">Refurbished Phones</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="#!">KPN</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Odido</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Simyo</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">TELE2</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">T-Mobile</a></li>
             </ul>
             <nav>
                 <div class="nav-wrapper">
@@ -32,7 +43,7 @@
                         <!-- SimOnly -->
                         <li><a href="#">Sim-Only</a></li>
                         <!-- Providers -->
-                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
                         <!-- Support -->
                         <li><a href="#">Support</a></li>
                         <!-- My Account -->
@@ -41,33 +52,52 @@
                 </div>
             </nav>
         </header>
-        <div class="row">
-            <div class="col s12 m6">
+        <div class="row centered">
+            <div class="col s12 m2">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/iphone-product.jpg" alt="Product Image">
-                        <span class="card-title">Card Title</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        <img src="img/kpn_logo.png">
                     </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+            </div>
+            <div class="col s12 m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/odido_logo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/simyo_logo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/tele2_logo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/tmobile_logo.png">
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col s12 m7">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
+            <div class="col s12 m4">
+                <div class="card">K
+                    <div class="card-image" id="product-image">
+                        <img src="img/iphone-product.jpg" alt="Product Image">
+                        <span class="card-title">iPhone 14 Pro
+                            <p>Fast. Smart. Stunning. The new iPhone is a game-changer.</p>
+                        </span>
                     </div>
                 </div>
             </div>

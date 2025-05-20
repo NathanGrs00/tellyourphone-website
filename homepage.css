@@ -1,0 +1,8 @@
+.card-title > p {
+  font-size: 1.2rem;
+}
+
+.card,
+#product-image img {
+    border-radius: 50px;
+}
