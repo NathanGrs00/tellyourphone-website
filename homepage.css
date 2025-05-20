@@ -1,8 +1,58 @@
-.card-title > p {
-  font-size: 1.2rem;
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #e0dddd;
+    --text-color: #333;
+    --background-color: #f1f1f1;
 }
 
-.card,
+/* Layout and Grid */
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: var(--background-color);
+}
+
+.row.centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.row.centered > .col {
+    margin-left: 30px !important;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+}
+
 #product-image img {
     border-radius: 50px;
+}
+
+.card-title > p {
+    font-size: 1.2rem;
+}
+
+#product-image span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    height: 85px;
+}
+
+.nav-wrapper {
+    background-color: var(--text-color);
+}
+
+.nav-wrapper > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
 }
