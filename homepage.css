@@ -97,3 +97,16 @@ nav {
 .page-footer {
     background-color: var(--primary-color);
 }
+
+
+.carousel {
+    height: 800px;
+}
+
+.carousel .carousel-item {
+    width: 600px !important;
+    height: 700px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

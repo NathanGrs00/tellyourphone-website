@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="homepage.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="myJs.js"></script>
+</head>
+<body>
+<header>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">New Phones</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Refurbished Phones</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">KPN</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Odido</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Simyo</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">TELE2</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">T-Mobile</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html">
+            <img width="150px" src="img/tell_your_phone_logo.png" class="brand-logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <!-- Home -->
+                <li><a href="index.html">Home</a></li>
+                <!-- Phones -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- SimOnly -->
+                <li><a href="#">Sim-Only</a></li>
+                <!-- Providers -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Support -->
+                <li><a href="#">Support</a></li>
+                <!-- My Account -->
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="img/phone-details/red-phone.png"></a>
+    <a class="carousel-item" href="#two!"><img src="img/phone-details/front-phone.webp"></a>
+    <a class="carousel-item" href="#three!"><img src="img/phone-details/transparent-phone.webp"></a>
+    <a class="carousel-item" href="#four!"><img src="img/phone-details/bronze-phone.webp"></a>
+    <a class="carousel-item" href="#five!"><img src="img/phone-details/green-phone.webp"></a>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
