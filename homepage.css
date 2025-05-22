@@ -24,18 +24,13 @@ body {
     align-items: stretch;
     margin-bottom: 0;
 }
-
 .row.centered > .col {
-    margin-left: 30px !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 30px !important;
 }
-
 .row.centered > .col .card {
     max-width: 150px;
     margin: 0 auto;
 }
-
 .row.centered > .col :hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -48,17 +43,14 @@ body {
     background-color: var(--secondary-color);
     border-radius: 30px;
 }
-
 #product-image img {
     border-radius: 20px;
 }
-
 .card-title > p {
     font-size: 1.2rem;
     margin: 0;
     font-weight: normal;
 }
-
 #product-image span {
     font-size: 2rem;
     font-weight: bold;
@@ -70,11 +62,9 @@ body {
 nav {
     height: 85px;
 }
-
 .nav-wrapper {
     background-color: var(--text-color);
 }
-
 .nav-wrapper > ul > li > a {
     display: flex;
     justify-content: center;
@@ -98,39 +88,76 @@ nav {
     background-color: var(--primary-color);
 }
 
-
+/* =========================
+   Carousel & Details Row
+   ========================= */
 .carousel {
     height: 800px;
     width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 5rem;
 }
-
 .carousel .carousel-item {
     width: 600px !important;
     height: 700px !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 5rem;
 }
-
 .details-row {
     display: flex;
-    gap: 40px; /* space between the two sections */
+    gap: 40px;
     margin-top: 40px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 5rem;
 }
-
-.details-row .order-summary, .details-row .options-summary {
+.details-row .order-summary,
+.details-row .options-summary {
     width: 50%;
 }
 
-.secifications-content {
-    margin: 3rem 5rem;
+/* =========================
+   Section Card Styles (Order, Specs)
+   ========================= */
+.order-summary,
+.specifications-content {
+    background: var(--secondary-color);
+    border-radius: 20px;
     padding: 2rem 3rem;
+}
+.order-summary h2,
+.specifications-content h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.order-summary .collapsible,
+.specifications-content .collapsible {
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.order-summary .collapsible-header,
+.specifications-content .collapsible-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--background-color);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 1rem;
+}
+.order-summary .collapsible-body,
+.specifications-content .collapsible-body {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+.specifications-content {
+    max-width: 900px;
+    margin: 3rem auto;
 }
 
 /* =========================
@@ -140,78 +167,32 @@ nav {
     color: var(--primary-color);
     font-weight: bold;
 }
-
 .dropdown-content {
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
 }
-
 .select-dropdown {
     color: var(--secondary-color);
 }
-
 .dropdown-content li > span,
 .dropdown-content li > a {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
-
 .select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid var(--primary-color)
+    border-bottom: 1px solid var(--primary-color);
 }
 
-
-
-.order-summary,
-.secifications-content {
-    background: var(--secondary-color);
-    border-radius: 20px;
-    padding: 2rem;
-}
-
-.order-summary h2,
-.secifications-content h2 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-.order-summary .collapsible,
-.secifications-content .collapsible {
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: none;
-}
-
-.order-summary .collapsible-header,
-.secifications-content .collapsible-header {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--text-color);
-    background: var(--background-color);
-    border-radius: 8px;
-    margin-bottom: 8px;
-    padding: 1rem;
-}
-
-.order-summary .collapsible-body,
-.secifications-content .collapsible-body {
-    background: #fff;
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    color: var(--text-color);
-    margin-bottom: 12px;
-}
-
+/* =========================
+   Helpdesk Bot Styles
+   ========================= */
 .options-summary .collection {
     background: var(--secondary-color);
     border-radius: 16px;
-    padding: 1rem 1rem;
+    padding: 1rem;
     margin-top: 2rem;
     border: none;
 }
-
 .options-summary .collection-item.avatar {
     background: #fff;
     border-radius: 12px;
@@ -221,7 +202,6 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
-
 .options-summary .collection-item.avatar .material-icons.circle {
     font-size: 2.5rem;
     width: 48px;
@@ -230,17 +210,14 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
 .options-summary .collection-item.avatar .title {
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
-
 .options-summary .collection-item.avatar p {
     color: var(--text-color);
 }
-
 .options-summary .collection-item.avatar .secondary-content .material-icons {
     color: var(--primary-color);
     font-size: 2rem;
