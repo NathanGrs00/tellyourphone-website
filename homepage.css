@@ -43,17 +43,33 @@ body {
     background-color: var(--secondary-color);
     border-radius: 30px;
 }
-#product-image img {
-    border-radius: 20px;
+#product-image {
+    position: relative;
 }
-.card-title > p {
-    font-size: 1.2rem;
-    margin: 0;
-    font-weight: normal;
+
+#product-image .card-title,
+#product-image .product-desc,
+#product-image .custom-btn {
+    position: absolute;
+    left: 2rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
-#product-image span {
+#product-image .card-title {
+    bottom: 9rem;
     font-size: 2rem;
     font-weight: bold;
+    padding: 0;
+}
+#product-image .product-desc {
+    bottom: 5rem;
+    font-size: 1.2rem;
+}
+#product-image .custom-btn {
+    bottom: 1.5rem;
+}
+#product-image img {
+    border-radius: 20px;
 }
 
 /* =========================
@@ -173,7 +189,6 @@ nav {
     width: 80%;
     display: flex;
     gap: 40px;
-    margin-top: 40px;
     margin: auto;
 }
 .details-row .order-summary,
