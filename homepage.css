@@ -114,8 +114,8 @@ nav {
 }
 
 .nav-wrapper .material-icons.right {
-    margin-left: 0.5rem;
     font-size: 1.3rem;
+    margin: 0;
 }
 
 /* =========================
@@ -335,4 +335,102 @@ nav {
     height: 40px;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+.login-bg {
+    background: var(--tertiary-color);
+    min-height: 100vh;
+}
+
+.login-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.login-card {
+    padding: 2.5rem 3rem;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-btn {
+    width: 100%;
+    background: var(--primary-color);
+    font-weight: bold;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.forgot-password a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Cart Page Styles */
+.cart-container {
+    height: 60vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card-content{
+    min-height: 50vh;
+}
+.cart-card {
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cart-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cart-item-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cart-delete-icon {
+    color: var(--primary-color);
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.cart-total-label,
+.cart-total-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-total-value {
+    color: var(--primary-color);
+}
+
+.card-action.cart-checkout {
+    text-align: right;
+}
+
+.cart-checkout-btn {
+    background: var(--primary-color);
+    font-weight: bold;
 }

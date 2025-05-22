@@ -10,19 +10,56 @@
     <link type="text/css" rel="stylesheet" href="homepage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body style="background: var(--tertiary-color); min-height: 100vh;">
+<body class="login-bg">
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="index.html">
-            <img width="150px" src="img/tell_your_phone_logo.png" class="brand-logo">
-        </a>
-    </div>
-</nav>
+<header>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">New Phones</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Refurbished Phones</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="https://www.kpn.com/">KPN</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.odido.nl/">Odido</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.simyo.nl/">Simyo</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.tele2.nl/">TELE2</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html">
+                <img alt="Tell Your Phone logo" src="img/tell_your_phone_logo_small.png" class="brand-logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <!-- Home -->
+                <li><a href="index.html">Home</a></li>
+                <!-- Phones -->
+                <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- SimOnly -->
+                <li><a href="#">Sim-Only</a></li>
+                <!-- Providers -->
+                <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Support -->
+                <li><a href="#">Support</a></li>
+                <!-- My Account -->
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="material-icons right">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-<div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
-    <div class="card" style="padding: 2.5rem 3rem; border-radius: 30px; max-width: 400px; width: 100%;">
-        <h4 style="color: var(--primary-color); font-weight: bold; text-align: center; margin-bottom: 2rem;">Login</h4>
+<div class="container login-center">
+    <div class="card login-card">
+        <h4 class="login-title">Login</h4>
         <form>
             <div class="input-field">
                 <input id="email" type="email" class="validate" required>
@@ -32,11 +69,11 @@
                 <input id="password" type="password" class="validate" required>
                 <label for="password">Password</label>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" style="width: 100%; background: var(--primary-color); font-weight: bold;">
+            <button class="btn waves-effect waves-light login-btn" type="submit">
                 Login
             </button>
-            <div style="text-align: center; margin-top: 1.5rem;">
-                <a href="#" style="color: var(--primary-color); font-weight: bold;">Forgot password?</a>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
             </div>
         </form>
     </div>
