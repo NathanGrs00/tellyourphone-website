@@ -1,11 +1,11 @@
 @import "config.css";
+
 /* =========================
-   Layout and Grid
+   Layout & Grid
    ========================= */
 .row {
     margin: 0;
 }
-
 .row.centered {
     display: flex;
     flex-wrap: wrap;
@@ -28,11 +28,16 @@
 /* =========================
    Card Styles
    ========================= */
-
 #product-image {
     position: relative;
 }
+#product-image img {
+    border-radius: 20px;
+}
 
+/* =========================
+   Product Image Overlay
+   ========================= */
 #product-image .card-title,
 #product-image .product-desc,
 #product-image .custom-btn {
@@ -54,9 +59,6 @@
 #product-image .custom-btn {
     bottom: 1.5rem;
 }
-#product-image img {
-    border-radius: 20px;
-}
 
 /* =========================
    Buttons
@@ -64,4 +66,3 @@
 .custom-btn {
     background-color: #c8677a;
 }
-
