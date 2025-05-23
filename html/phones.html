@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Tell Your Phone</title>
+  <!-- Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../css/phones.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="../myJs.js"></script>
+</head>
+<body class="cart-bg">
+
+<header>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="../html/phones.html">New Phones</a></li>
+    <li class="divider"></li>
+    <li><a href="../html/phones.html">Refurbished Phones</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="https://www.kpn.com/">KPN</a></li>
+    <li class="divider"></li>
+    <li><a href="https://www.odido.nl/">Odido</a></li>
+    <li class="divider"></li>
+    <li><a href="https://www.simyo.nl/">Simyo</a></li>
+    <li class="divider"></li>
+    <li><a href="https://www.tele2.nl/">TELE2</a></li>
+    <li class="divider"></li>
+    <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html">
+        <img alt="Tell Your Phone logo" src="../img/tell_your_phone_logo_small.png" class="brand-logo">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <!-- Home -->
+        <li><a href="../index.html">Home</a></li>
+        <!-- Phones -->
+        <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
+        <!-- SimOnly -->
+        <li><a href="../html/paymentplan.html">Sim-Only</a></li>
+        <!-- Providers -->
+        <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+        <!-- Support -->
+        <li><a href="../html/support.html">Support</a></li>
+        <!-- My Account -->
+        <li><a href="../html/login.html">Login</a></li>
+        <li>
+          <a href="../html/cart.html">
+            <i class="material-icons right">shopping_cart</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container cart-container">
+  <div class="row phone-card-grid">
+    <div class="col s12 m6 l3 phone-card-col">
+      <div class="card">
+        <div class="card-image">
+          <img src="../img/phone-details/red-phone.png" alt="Phone Model 1">
+          <span class="card-title">Model 1</span>
+        </div>
+        <div class="card-content">
+          <label>
+            <input type="checkbox" class="filled-in" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3 phone-card-col">
+      <div class="card">
+        <div class="card-image">
+          <img src="../img/phone-details/green-phone.webp" alt="Phone Model 2">
+          <span class="card-title">Model 2</span>
+        </div>
+        <div class="card-content">
+          <label>
+            <input type="checkbox" class="filled-in" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3 phone-card-col">
+      <div class="card">
+        <div class="card-image">
+          <img src="../img/phone-details/front-phone.webp" alt="Phone Model 3">
+          <span class="card-title">Model 3</span>
+        </div>
+        <div class="card-content">
+          <label>
+            <input type="checkbox" class="filled-in" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l3 s12">
+        <h5 class="white-text">Sitemap
+        </h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="../index.html">Home </a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/paymentplan.html">SimOnly</a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/support.html">Support</a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Phones
+        </h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="../html/phones.html">New phones </a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/phones.html">Refurbished phones</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Providers
+        </h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://www.kpn.com">KPN </a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.odido.nl">Odido</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.simyo.nl">Simyo</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.tele2.nl">Tele2</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.t-mobile.com">T-Mobile</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Other</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="../html/support.html">Terms & conditions</a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/support.html">Privacy policy</a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/support.html">Cookies</a></li>
+          <li><a class="grey-text text-lighten-3" href="../html/support.html">About us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      &copy;2025 All rights reserved.
+      <a class="grey-text text-lighten-4 right" href="https://www.portfolio.adainforma.tk/nathan-g">Nathan Geers</a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+</body>
+</html>

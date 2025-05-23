@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #c8677a;
+    --secondary-color: #e0dddd;
+    --text-color: #333;
+    --tertiary-color: #4f4d4d;
+    --background-color: #f1f1f1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--tertiary-color);
+}
+
+.page-footer {
+    margin-top: auto;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+nav {
+    height: 85px;
+}
+
+.nav-wrapper {
+    background-color: var(--text-color);
+    padding: 0 2rem;
+}
+
+.brand-logo {
+    height: 60px;
+    width: auto;
+    margin-top: 12px;
+}
+
+.nav-wrapper > ul {
+    margin-left: auto;
+}
+
+.nav-wrapper > ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 1.5rem;
+    transition: background 0.5s, color 0.5s;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-wrapper > ul > li > a:hover,
+.nav-wrapper > ul > li > a.active {
+    background: var(--primary-color);
+}
+
+.nav-wrapper .material-icons.right {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* =========================
+   Footer
+   ========================= */
+.page-footer {
+    background-color: var(--primary-color);
+}
+
+/* =========================
+   Dropdown Styles
+   ========================= */
+.input-field label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.dropdown-content {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+.select-dropdown {
+    color: var(--secondary-color);
+}
+.dropdown-content li > span,
+.dropdown-content li > a {
+    color: var(--secondary-color);
+}
+.dropdown-content li:hover,
+.dropdown-content li.active,
+.dropdown-content li.selected {
+    background-color: var(--text-color);
+}
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+}

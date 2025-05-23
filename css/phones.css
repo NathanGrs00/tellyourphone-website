@@ -1,0 +1,18 @@
+@import "config.css";
+
+.phone-card-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.phone-card-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.phone-card-col .card {
+    width: 100%;
+    max-width: 220px;
+    min-width: 180px;
+}

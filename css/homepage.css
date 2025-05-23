@@ -1,0 +1,67 @@
+@import "config.css";
+/* =========================
+   Layout and Grid
+   ========================= */
+.row {
+    margin: 0;
+}
+
+.row.centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 0;
+}
+.row.centered > .col {
+    margin: 20px 0 20px 30px !important;
+}
+.row.centered > .col .card {
+    max-width: 150px;
+    margin: 0 auto;
+}
+.row.centered > .col :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* =========================
+   Card Styles
+   ========================= */
+
+#product-image {
+    position: relative;
+}
+
+#product-image .card-title,
+#product-image .product-desc,
+#product-image .custom-btn {
+    position: absolute;
+    left: 2rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+#product-image .card-title {
+    bottom: 9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+}
+#product-image .product-desc {
+    bottom: 5rem;
+    font-size: 1.2rem;
+}
+#product-image .custom-btn {
+    bottom: 1.5rem;
+}
+#product-image img {
+    border-radius: 20px;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.custom-btn {
+    background-color: #c8677a;
+}
+
