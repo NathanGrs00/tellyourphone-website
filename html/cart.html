@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Cart - Tell Your Phone</title>
-    <!-- Materialize CSS -->
+    <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS Framework -->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Lato Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Custom Cart Styles -->
     <link type="text/css" rel="stylesheet" href="../css/cart.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Custom JavaScript -->
     <script src="../myJs.js"></script>
 </head>
 <body class="cart-bg">
 
+<!-- Header with Navigation and Dropdowns -->
 <header>
+    <!-- Dropdown Menu for Phones -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="../html/phones.html">New Phones</a></li>
         <li class="divider"></li>
         <li><a href="../html/phones.html">Refurbished Phones</a></li>
     </ul>
+    <!-- Dropdown Menu for Providers -->
     <ul id="dropdown2" class="dropdown-content">
         <li><a href="https://www.kpn.com/">KPN</a></li>
         <li class="divider"></li>
@@ -30,23 +37,20 @@
         <li class="divider"></li>
         <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
     </ul>
+    <!-- Main Navigation Bar -->
     <nav>
         <div class="nav-wrapper">
+            <!-- Logo -->
             <a href="../index.html">
                 <img alt="Tell Your Phone logo" src="../img/tell_your_phone_logo_small.png" class="brand-logo">
             </a>
+            <!-- Navigation Links -->
             <ul class="right hide-on-med-and-down">
-                <!-- Home -->
                 <li><a href="../index.html">Home</a></li>
-                <!-- Phones -->
                 <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
-                <!-- SimOnly -->
                 <li><a href="../html/paymentplan.html">Sim-Only</a></li>
-                <!-- Providers -->
                 <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
-                <!-- Support -->
                 <li><a href="../html/support.html">Support</a></li>
-                <!-- My Account -->
                 <li><a href="../html/login.html">Login</a></li>
                 <li>
                     <a href="../html/cart.html">
@@ -58,24 +62,32 @@
     </nav>
 </header>
 
+<!-- Shopping Cart Container -->
 <div class="container cart-container">
     <div class="card cart-card">
         <div class="card-content">
+            <!-- Cart Title -->
             <span class="card-title cart-title">Shopping Cart</span>
+            <!-- Cart Items List -->
             <ul class="collection">
                 <li class="collection-item avatar">
+                    <!-- Product Image -->
                     <img src="../img/iphone-product.jpg" alt="iPhone 14 Pro" class="circle">
+                    <!-- Product Name -->
                     <span class="title cart-item-title">iPhone 14 Pro</span>
+                    <!-- Product Quantity and Price -->
                     <p>1 × €1,199</p>
+                    <!-- Delete Icon -->
                     <a href="#!" class="secondary-content"><i class="material-icons cart-delete-icon">delete</i></a>
                 </li>
-                <!-- Add more items as needed -->
             </ul>
+            <!-- Cart Total Row -->
             <div class="cart-total-row">
                 <span class="cart-total-label">Total:</span>
                 <span class="cart-total-value">€1,199</span>
             </div>
         </div>
+        <!-- Checkout Button -->
         <div class="card-action cart-checkout">
             <a class="btn waves-effect waves-light cart-checkout-btn" href="https://www.odido.nl/shop/bestellen/winkelwagen?ch=es&cc=con&sc=acq">
                 Checkout
@@ -85,9 +97,11 @@
     </div>
 </div>
 
+<!-- Footer Section -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">
+            <!-- Sitemap Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Sitemap
                 </h5>
@@ -98,6 +112,7 @@
                     <li><a class="grey-text text-lighten-3" href="../html/login.html">Login</a></li>
                 </ul>
             </div>
+            <!-- Phones Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Phones
                 </h5>
@@ -106,6 +121,7 @@
                     <li><a class="grey-text text-lighten-3" href="../html/phones.html">Refurbished phones</a></li>
                 </ul>
             </div>
+            <!-- Providers Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Providers
                 </h5>
@@ -117,6 +133,7 @@
                     <li><a class="grey-text text-lighten-3" href="https://www.t-mobile.com">T-Mobile</a></li>
                 </ul>
             </div>
+            <!-- Other Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Other</h5>
                 <ul>
@@ -128,6 +145,7 @@
             </div>
         </div>
     </div>
+    <!-- Copyright -->
     <div class="footer-copyright">
         <div class="container">
             &copy;2025 All rights reserved.
@@ -136,6 +154,7 @@
     </div>
 </footer>
 
+<!-- Materialize JavaScript (for components like dropdowns) -->
 <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 </body>
 </html>

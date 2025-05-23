@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Login - Tell Your Phone</title>
-    <!-- Materialize CSS -->
+    <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS Framework -->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Lato Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Custom Login Styles -->
     <link type="text/css" rel="stylesheet" href="../css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Custom JavaScript -->
     <script src="../myJs.js"></script>
 </head>
 <body class="login-bg">
 
+<!-- Header with Navigation and Dropdowns -->
 <header>
+    <!-- Dropdown Menu for Phones -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="../html/phones.html">New Phones</a></li>
         <li class="divider"></li>
         <li><a href="../html/phones.html">Refurbished Phones</a></li>
     </ul>
+    <!-- Dropdown Menu for Providers -->
     <ul id="dropdown2" class="dropdown-content">
         <li><a href="https://www.kpn.com/">KPN</a></li>
         <li class="divider"></li>
@@ -30,24 +37,28 @@
         <li class="divider"></li>
         <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
     </ul>
+    <!-- Main Navigation Bar -->
     <nav>
         <div class="nav-wrapper">
+            <!-- Logo -->
             <a href="../index.html">
                 <img alt="Tell Your Phone logo" src="../img/tell_your_phone_logo_small.png" class="brand-logo">
             </a>
+            <!-- Navigation Links -->
             <ul class="right hide-on-med-and-down">
                 <!-- Home -->
                 <li><a href="../index.html">Home</a></li>
-                <!-- Phones -->
+                <!-- Phones Dropdown -->
                 <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
-                <!-- SimOnly -->
+                <!-- Sim-Only -->
                 <li><a href="../html/paymentplan.html">Sim-Only</a></li>
-                <!-- Providers -->
+                <!-- Providers Dropdown -->
                 <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Support -->
                 <li><a href="../html/support.html">Support</a></li>
-                <!-- My Account -->
+                <!-- Login -->
                 <li><a href="../html/login.html">Login</a></li>
+                <!-- Shopping Cart Icon -->
                 <li>
                     <a href="../html/cart.html">
                         <i class="material-icons right">shopping_cart</i>
@@ -58,9 +69,12 @@
     </nav>
 </header>
 
+<!-- Login Form Container -->
 <div class="container login-center">
     <div class="card login-card">
+        <!-- Login Title -->
         <h4 class="login-title">Login</h4>
+        <!-- Login Form -->
         <form>
             <div class="input-field">
                 <input id="email" type="email" class="validate" required>
@@ -70,9 +84,11 @@
                 <input id="password" type="password" class="validate" required>
                 <label for="password">Password</label>
             </div>
+            <!-- Login Button -->
             <button class="btn waves-effect waves-light login-btn" type="submit">
                 Login
             </button>
+            <!-- Forgot Password Link -->
             <div class="forgot-password">
                 <a href="#">Forgot password?</a>
             </div>
@@ -80,9 +96,11 @@
     </div>
 </div>
 
+<!-- Footer Section -->
 <footer class="page-footer">
     <div class="container">
         <div class="row">
+            <!-- Sitemap Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Sitemap
                 </h5>
@@ -93,6 +111,7 @@
                     <li><a class="grey-text text-lighten-3" href="../html/login.html">Login</a></li>
                 </ul>
             </div>
+            <!-- Phones Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Phones
                 </h5>
@@ -101,6 +120,7 @@
                     <li><a class="grey-text text-lighten-3" href="../html/phones.html">Refurbished phones</a></li>
                 </ul>
             </div>
+            <!-- Providers Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Providers
                 </h5>
@@ -112,6 +132,7 @@
                     <li><a class="grey-text text-lighten-3" href="https://www.t-mobile.com">T-Mobile</a></li>
                 </ul>
             </div>
+            <!-- Other Links -->
             <div class="col l3 s12">
                 <h5 class="white-text">Other</h5>
                 <ul>
@@ -123,6 +144,7 @@
             </div>
         </div>
     </div>
+    <!-- Copyright -->
     <div class="footer-copyright">
         <div class="container">
             &copy;2025 All rights reserved.
@@ -131,6 +153,7 @@
     </div>
 </footer>
 
+<!-- Materialize JavaScript (for components like dropdowns) -->
 <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 </body>
 </html>

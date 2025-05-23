@@ -4,7 +4,8 @@
    Layout & Grid
    ========================= */
 .row {
-    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .row.centered {
     display: flex;
@@ -28,36 +29,39 @@
 /* =========================
    Card Styles
    ========================= */
-#product-image {
+.product-image {
     position: relative;
 }
-#product-image img {
+.product-image img {
     border-radius: 20px;
 }
 
 /* =========================
    Product Image Overlay
    ========================= */
-#product-image .card-title,
-#product-image .product-desc,
-#product-image .custom-btn {
+.product-image .card-title,
+.product-image .product-desc,
+.product-image .custom-btn {
     position: absolute;
     left: 2rem;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
-#product-image .card-title {
+.product-image .card-title {
     bottom: 9rem;
     font-size: 2rem;
     font-weight: bold;
     padding: 0;
 }
-#product-image .product-desc {
+.product-image .product-desc {
     bottom: 5rem;
     font-size: 1.2rem;
 }
-#product-image .custom-btn {
+.product-image .custom-btn {
+    position: absolute;
     bottom: 1.5rem;
+    right: 2rem;
+    left: auto;
 }
 
 /* =========================
@@ -65,4 +69,12 @@
    ========================= */
 .custom-btn {
     background-color: #c8677a;
+}
+
+/* =========================
+   Parallax
+   ========================= */
+
+.parallax-container {
+    min-height: 500px;
 }
