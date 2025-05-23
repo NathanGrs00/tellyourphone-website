@@ -1,0 +1,52 @@
+@import "config.css";
+
+.cart-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cart-card {
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cart-checkout-btn {
+    background: var(--primary-color);
+    font-weight: bold;
+}
+
+.cart-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cart-item-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cart-delete-icon {
+    color: var(--primary-color);
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.cart-total-label,
+.cart-total-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-total-value {
+    color: var(--primary-color);
+}
+
+.card-action.cart-checkout {
+    text-align: right;
+}

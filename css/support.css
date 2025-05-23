@@ -1,0 +1,13 @@
+@import "config.css";
+
+.cart-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.simonly-info-card {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+}

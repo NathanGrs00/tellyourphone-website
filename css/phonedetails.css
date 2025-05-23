@@ -1,0 +1,178 @@
+@import "config.css";
+
+/* =========================
+   Layout & Structure
+   ========================= */
+.details-row {
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    margin: 4rem auto 0 auto;
+}
+.details-row .order-summary,
+.details-row .options-summary {
+    width: 50%;
+}
+.order-summary {
+    position: relative;
+}
+
+/* =========================
+   Carousel
+   ========================= */
+.carousel {
+    height: 800px;
+    width: 100%;
+    padding: 0 5rem;
+}
+.carousel .carousel-item {
+    width: 600px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+/* =========================
+   Card Styles (Order, Specs, Delivery)
+   ========================= */
+.order-summary,
+.specifications-content {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+}
+.order-summary h2,
+.specifications-content h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.specifications-content {
+    margin: 3rem auto;
+    width: 80%;
+}
+.order-summary .collapsible,
+.specifications-content .collapsible {
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.order-summary .collapsible-header,
+.specifications-content .collapsible-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--background-color);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 1rem;
+}
+.order-summary .collapsible-body,
+.specifications-content .collapsible-body {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+/* =========================
+   Order Button
+   ========================= */
+.order-btn-fixed {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    width: calc(100% - 4rem);
+    display: flex;
+    justify-content: flex-start;
+    pointer-events: none;
+}
+.order-btn-fixed .order-btn {
+    pointer-events: auto;
+}
+.order-btn {
+    background: linear-gradient(90deg, #c8677a 0%, #ff8a65 100%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    border: none;
+    outline: none;
+}
+.order-btn:hover,
+.order-btn:focus {
+    background: linear-gradient(90deg, #ff8a65 0%, #c8677a 100%);
+    transform: scale(1.07);
+    box-shadow: 0 12px 32px rgba(200, 103, 122, 0.4), 0 2px 8px rgba(0,0,0,0.12);
+    color: #fff;
+}
+
+/* =========================
+   Helpdesk Bot Styles
+   ========================= */
+.options-summary .collection {
+    background: var(--secondary-color);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+}
+.options-summary .collection-item.avatar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem 1.2rem 6rem;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.options-summary .collection-item.avatar .material-icons.circle {
+    font-size: 2.5rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options-summary .collection-item.avatar .title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+.options-summary .collection-item.avatar p {
+    color: var(--text-color);
+}
+.options-summary .collection-item.avatar .secondary-content .material-icons {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+/* =========================
+   Delivery Service Card
+   ========================= */
+.delivery-card {
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    background: var(--secondary-color);
+}
+.delivery-card h5 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.delivery-card label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.delivery-card img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+}

@@ -1,10 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tell Your Phone</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS Framework -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Custom Homepage Styles -->
+    <link type="text/css" rel="stylesheet" href="css/homepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Custom JavaScript -->
+    <script src="myJs.js"></script>
 </head>
-<body>
 
+<body>
+<!-- Header with Navigation and Dropdowns -->
+<header>
+    <!-- Dropdown Menu for Phones -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="html/phones.html">New Phones</a></li>
+        <li class="divider"></li>
+        <li><a href="html/phones.html">Refurbished Phones</a></li>
+    </ul>
+    <!-- Dropdown Menu for Providers -->
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="https://www.kpn.com/">KPN</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.odido.nl/">Odido</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.simyo.nl/">Simyo</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.tele2.nl/">TELE2</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
+    </ul>
+    <!-- Main Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Logo -->
+            <a href="index.html">
+                <img alt="Tell Your Phone logo" src="img/tell_your_phone_logo_small.png" class="brand-logo">
+            </a>
+            <!-- Navigation Links -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="html/paymentplan.html">Sim-Only</a></li>
+                <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="html/support.html">Support</a></li>
+                <li><a href="html/login.html">Login</a></li>
+                <li>
+                    <a href="html/cart.html">
+                        <i class="material-icons right">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Parallax Banner Section -->
+<div class="parallax-container">
+    <div class="parallax"><img alt="Background image" src="img/background_store.jpg"></div>
+</div>
+
+<!-- Provider Logos Row -->
+<div class="row centered">
+    <div class="col s12 m2">
+        <div class="card">
+            <div class="card-image">
+                <img alt="KPN logo" src="img/kpn_logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m2">
+        <div class="card">
+            <div class="card-image">
+                <img alt="Odido logo" src="img/odido_logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m2">
+        <div class="card">
+            <div class="card-image">
+                <img alt="Simyo logo" src="img/simyo_logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m2">
+        <div class="card">
+            <div class="card-image">
+                <img alt="Tele2 logo" src="img/tele2_logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m2">
+        <div class="card">
+            <div class="card-image">
+                <img alt="Tmobile logo" src="img/tmobile_logo.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Product Section -->
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-image product-image">
+                <!-- Product Link and Image -->
+                <a href="html/phone-details.html">
+                    <img src="img/iphone-product.jpg" alt="Product Image">
+                </a>
+                <!-- Product Title -->
+                <span class="card-title">iPhone 14 Pro</span>
+                <!-- Product Description -->
+                <p class="product-desc">Fast. Smart. Stunning. The new iPhone is a game-changer.</p>
+                <!-- Floating Action Button for Shopping Cart -->
+                <a href="html/phone-details.html" class="btn-floating btn-large waves-effect waves-light custom-btn">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image product-image">
+                <a href="html/phone-details.html">
+                    <img src="img/products/airpods.webp" alt="AirPods">
+                </a>
+                <span class="card-title">AirPods Pro</span>
+                <p class="product-desc">Wireless. Effortless. Magical. Enjoy premium sound quality.</p>
+                <a href="html/phone-details.html" class="btn-floating btn-large waves-effect waves-light custom-btn">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-image product-image">
+                <a href="html/phone-details.html">
+                    <img src="img/products/smartwatch.jpg" alt="Smartwatch">
+                </a>
+                <span class="card-title">Smartwatch</span>
+                <p class="product-desc">Track your health and stay connected on the go.</p>
+                <a href="html/phone-details.html" class="btn-floating btn-large waves-effect waves-light custom-btn">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image product-image">
+                <a href="html/phone-details.html">
+                    <img src="img/products/charger.avif" alt="Charger">
+                </a>
+                <span class="card-title">Fast Charger</span>
+                <p class="product-desc">Charge your devices quickly and safely.</p>
+                <a href="html/phone-details.html" class="btn-floating btn-large waves-effect waves-light custom-btn">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Sitemap Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Sitemap
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Home </a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/paymentplan.html">SimOnly</a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/support.html">Support</a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- Phones Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Phones
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="html/phones.html">New phones </a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/phones.html">Refurbished phones</a></li>
+                </ul>
+            </div>
+            <!-- Providers Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Providers
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.kpn.com">KPN </a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.odido.nl">Odido</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.simyo.nl">Simyo</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.tele2.nl">Tele2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.t-mobile.com">T-Mobile</a></li>
+                </ul>
+            </div>
+            <!-- Other Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Other</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="html/support.html">Terms & conditions</a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/support.html">Privacy policy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/support.html">Cookies</a></li>
+                    <li><a class="grey-text text-lighten-3" href="html/support.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        <div class="container">
+            &copy;2025 All rights reserved.
+            <a class="grey-text text-lighten-4 right" href="https://www.portfolio.adainforma.tk/nathan-g">Nathan Geers</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Materialize JavaScript (for components like dropdowns and parallax) -->
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS Framework -->
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Custom Phone Details Styles -->
+    <link type="text/css" rel="stylesheet" href="../css/phonedetails.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Custom JavaScript -->
+    <script src="../myJs.js"></script>
+</head>
+<body>
+
+<!-- Header with Navigation and Dropdowns -->
+<header>
+    <!-- Dropdown Menu for Phones -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../html/phones.html">New Phones</a></li>
+        <li class="divider"></li>
+        <li><a href="../html/phones.html">Refurbished Phones</a></li>
+    </ul>
+    <!-- Dropdown Menu for Providers -->
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="https://www.kpn.com/">KPN</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.odido.nl/">Odido</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.simyo.nl/">Simyo</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.tele2.nl/">TELE2</a></li>
+        <li class="divider"></li>
+        <li><a href="https://www.t-mobile.com/">T-Mobile</a></li>
+    </ul>
+    <!-- Main Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Logo -->
+            <a href="../index.html">
+                <img alt="Tell Your Phone logo" src="../img/tell_your_phone_logo_small.png" class="brand-logo">
+            </a>
+            <!-- Navigation Links -->
+            <ul class="right hide-on-med-and-down">
+                <!-- Home -->
+                <li><a href="../index.html">Home</a></li>
+                <!-- Phones Dropdown -->
+                <li><a class="dropdown-trigger" data-target="dropdown1">Phones<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Sim-Only -->
+                <li><a href="../html/paymentplan.html">Sim-Only</a></li>
+                <!-- Providers Dropdown -->
+                <li><a class="dropdown-trigger" data-target="dropdown2">Providers<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Support -->
+                <li><a href="../html/support.html">Support</a></li>
+                <!-- Login -->
+                <li><a href="../html/login.html">Login</a></li>
+                <!-- Shopping Cart Icon -->
+                <li>
+                    <a href="../html/cart.html">
+                        <i class="material-icons right">shopping_cart</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Product Image Carousel -->
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="../img/phone-details/red-phone.png"></a>
+    <a class="carousel-item" href="#two!"><img src="../img/phone-details/front-phone.webp"></a>
+    <a class="carousel-item" href="#three!"><img src="../img/phone-details/transparent-phone.webp"></a>
+    <a class="carousel-item" href="#four!"><img src="../img/phone-details/bronze-phone.webp"></a>
+    <a class="carousel-item" href="#five!"><img src="../img/phone-details/green-phone.webp"></a>
+</div>
+
+<!-- Main Details Row: Options and Order Summary -->
+<div class="details-row">
+    <!-- Product Options and AI Helpdesk -->
+    <div class="options-summary">
+        <!-- Color Selection Dropdown -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose color</option>
+                <option value="deep-purple">Deep Purple</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="space-black">Space Black</option>
+            </select>
+            <label>Color</label>
+        </div>
+        <!-- Storage Selection Dropdown -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose storage</option>
+                <option value="128gb">128GB</option>
+                <option value="256gb">256GB</option>
+                <option value="512gb">512GB</option>
+                <option value="1tb">1TB</option>
+            </select>
+            <label>Storage</label>
+        </div>
+        <!-- Plan Selection Dropdown -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose plan</option>
+                <option value="sim-only">Sim-Only</option>
+                <option value="2yr-contract">2-Year Contract</option>
+                <option value="prepaid">Prepaid</option>
+            </select>
+            <label>Plan</label>
+        </div>
+        <!-- Delivery Service Selection -->
+        <div class="delivery-card">
+            <h5>Choose delivery service</h5>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="delivery" type="radio" value="dhl" checked />
+                        <span>
+                            <img src="../img/dhl_logo.png" alt="DHL">
+                            DHL
+                        </span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="delivery" type="radio" value="postnl" />
+                        <span>
+                            <img src="../img/postnl_logo.png" alt="PostNL">
+                            PostNL
+                        </span>
+                    </label>
+                </p>
+            </form>
+        </div>
+        <!-- AI Helpdesk Bot Card -->
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="material-icons circle" style="background-color:#c8677a; color:white;">smart_toy</i>
+                <span class="title"><strong>AI Helpdesk Bot</strong></span>
+                <p>
+                    Hi! I&#39;m here to help you with your order.<br>
+                    Ask me anything about your phone, plan, or delivery.
+                </p>
+                <a href="#!" class="secondary-content"><i class="material-icons">chat</i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Order Summary and Order Button -->
+    <div class="order-summary">
+        <h2>Your order:</h2>
+        <!-- Collapsible Order Details -->
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">payments</i>Monthly Payment</div>
+                <div class="collapsible-body">
+                    <span>&euro; 20,00 per month<br>Includes: 10GB data, Unlimited calls & SMS</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">credit_card</i>One-Time Payment</div>
+                <div class="collapsible-body">
+                    <span>Device cost: &euro; 799,99<br>Activation fee: &euro; 15,00</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">card_giftcard</i>Extras</div>
+                <div class="collapsible-body">
+                    <span>Free case included<br>2-year warranty</span>
+                </div>
+            </li>
+        </ul>
+        <!-- Order Now Button -->
+        <div class="order-btn-fixed">
+            <a href="cart.html" class="waves-effect waves-light btn-large order-btn">Order now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Specifications Section -->
+<div class="specifications-content">
+    <h2>Specifications:</h2>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">straighten</i>Dimensions</div>
+            <div class="collapsible-body"><span>146.7 x 71.5 x 7.7 mm, 204g</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">sd_storage</i>Storage</div>
+            <div class="collapsible-body"><span>128GB / 256GB / 512GB / 1TB</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">memory</i>Hardware</div>
+            <div class="collapsible-body"><span>Apple A16 Bionic, Hexa-core CPU, 6GB RAM</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">phone_iphone</i>Display</div>
+            <div class="collapsible-body"><span>6.1-inch OLED, 2556 x 1179 pixels, 120Hz</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">photo_camera</i>Camera</div>
+            <div class="collapsible-body"><span>Triple 48MP + 12MP + 12MP rear, 12MP front</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">battery_full</i>Battery</div>
+            <div class="collapsible-body"><span>3200 mAh, Fast charging, Wireless charging</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">android</i>Operating System</div>
+            <div class="collapsible-body"><span>iOS 17</span></div>
+        </li>
+    </ul>
+</div>
+
+<!-- Footer Section -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Sitemap Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Sitemap
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../index.html">Home </a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/paymentplan.html">SimOnly</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/support.html">Support</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- Phones Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Phones
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../html/phones.html">New phones </a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/phones.html">Refurbished phones</a></li>
+                </ul>
+            </div>
+            <!-- Providers Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Providers
+                </h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.kpn.com">KPN </a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.odido.nl">Odido</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.simyo.nl">Simyo</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.tele2.nl">Tele2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.t-mobile.com">T-Mobile</a></li>
+                </ul>
+            </div>
+            <!-- Other Links -->
+            <div class="col l3 s12">
+                <h5 class="white-text">Other</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../html/support.html">Terms & conditions</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/support.html">Privacy policy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/support.html">Cookies</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../html/support.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        <div class="container">
+            &copy;2025 All rights reserved.
+            <a class="grey-text text-lighten-4 right" href="https://www.portfolio.adainforma.tk/nathan-g">Nathan Geers</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Materialize JavaScript (for components like dropdowns, carousel, collapsible) -->
+<script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+</body>
+</html>
